@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zishann Jhumar Collection - Premium Chandeliers & Lighting</title>
+    <meta name="description"
+        content="Discover exquisite jhumar and chandelier collections. Premium lighting solutions for your dream home.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <h1>ZISHANN</h1>
+                        <p class="tagline">Luxury Lighting</p>
+                    </div>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#collection" class="nav-link">Collection</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-subtitle">Illuminate Your Dreams</h2>
+            <h1 class="hero-title">Premium Jhumar Collection</h1>
+            <p class="hero-description">Transform your space with our exquisite handcrafted chandeliers</p>
+            <a href="#collection" class="btn btn-primary">Explore Collection</a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section class="collection" id="collection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Exclusive Collection</h2>
+                <p class="section-subtitle">Handpicked luxury chandeliers for every style</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-image" id="product1"></div>
+                        <div class="product-badge">New</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal(1)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Product (1) - Royal Crystal Jhumar</h3>
+                        <p class="product-description">Elegant crystal chandelier with golden finish</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(48 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹45,999</span>
+                            <button class="btn btn-secondary" onclick="addToCart(1)">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-image" id="product2"></div>
+                        <div class="product-badge bestseller">Bestseller</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal(2)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Product (2) - Golden Empire Chandelier</h3>
+                        <p class="product-description">Majestic multi-tier golden chandelier</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(92 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹68,999</span>
+                            <button class="btn btn-secondary" onclick="addToCart(2)">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-image" id="product3"></div>
+                        <div class="product-badge">Premium</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal(3)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Product (3) - Modern Luxury Pendant</h3>
+                        <p class="product-description">Contemporary design with crystal accents</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-count">(35 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹32,999</span>
+                            <button class="btn btn-secondary" onclick="addToCart(3)">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-image" id="product4"></div>
+                        <div class="product-badge">Exclusive</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal(4)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Product (4) - Vintage Palace Jhumar</h3>
+                        <p class="product-description">Traditional design with intricate detailing</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(67 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹55,999</span>
+                            <button class="btn btn-secondary" onclick="addToCart(4)">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-image" id="product5"></div>
+                        <div class="product-badge">New</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal(5)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Product (5) - Diamond Cascade Chandelier</h3>
+                        <p class="product-description">Stunning cascading crystal design</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(41 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹78,999</span>
+                            <button class="btn btn-secondary" onclick="addToCart(5)">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image-wrapper">
+                        <div class="product-image" id="product6"></div>
+                        <div class="product-badge bestseller">Bestseller</div>
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openProductModal(6)">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Product (6) - Classic Heritage Jhumar</h3>
+                        <p class="product-description">Timeless elegance with brass finish</p>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-count">(58 reviews)</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹42,999</span>
+                            <button class="btn btn-secondary" onclick="addToCart(6)">Enquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Zishann</h2>
+                    <p>For over two decades, Zishann has been illuminating homes with exquisite chandeliers and jhumars.
+                        Our commitment to quality craftsmanship and timeless design has made us a trusted name in luxury
+                        lighting.</p>
+                    <p>Each piece in our collection is carefully curated to bring elegance and sophistication to your
+                        space. From traditional jhumars to contemporary chandeliers, we offer lighting solutions that
+                        transform ordinary rooms into extraordinary experiences.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Premium Quality</h4>
+                                <p>Handcrafted with finest materials</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Expert Installation</h4>
+                                <p>Professional setup included</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-text">
+                                <h4>Lifetime Support</h4>
+                                <p>Dedicated customer service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-img-wrapper" id="aboutImage"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Visit Our Showroom</h4>
+                            <p>Meerut, Uttar Pradesh, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 9639743712</p>
+                            <p>+91 9758968437</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>info@zishann.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <input type="tel" placeholder="Your Phone" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ZISHANN</h3>
+                    <p>Illuminating dreams with luxury lighting since 2000</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zishann Luxury Lighting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- N8N Chat Widget -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+    <script src="script.js"></script>
+
+    <!-- N8N Chat Widget Script -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        // Create chat widget
+        const chatWidget = createChat({
+            webhookUrl: 'https://n8n.srv1319269.hstgr.cloud/webhook/13b5ae70-c615-41a1-b843-29ffbca71661/chat',
+            i18n: {
+                en: {
+                    title: 'Zishann Assistant',
+                    subtitle: 'Online',
+                    footer: '',
+                    getStarted: 'Start Chat',
+                    inputPlaceholder: 'Type your message...',
+                }
+            },
+            // Auto-open settings
+            showWelcomeScreen: false,
+            defaultOpen: false
+        });
+
+        // Auto-popup after 4 seconds
+        setTimeout(() => {
+            // Open chat widget
+            if (chatWidget && chatWidget.open) {
+                chatWidget.open();
+            } else {
+                // Fallback: trigger click on chat button
+                const chatButton = document.querySelector('[data-key="button"]');
+                if (chatButton) {
+                    chatButton.click();
+                }
+            }
+        }, 4000); // 4 seconds delay
+    </script>
+
+</body>
+
+</html>

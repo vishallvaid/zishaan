@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Test - Zishann</title>
+    <style>
+        body {
+            background: #1a1a1a;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .test-image {
+            width: 300px;
+            height: 300px;
+            margin: 20px;
+            border: 2px solid #D4AF37;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+        }
+
+        h2 {
+            color: #D4AF37;
+        }
+
+        .info {
+            background: #2d2d2d;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🔍 Image Loading Test</h1>
+
+    <div class="info">
+        <h2>Testing Image Paths:</h2>
+        <p>If images show below, the paths are correct!</p>
+    </div>
+
+    <h2>Method 1: URL Encoded (%20 for spaces)</h2>
+    <div class="test-image" style="background-image: url('assets/images/products/product%20(1).jpg');"></div>
+    <div class="test-image" style="background-image: url('assets/images/products/product%20(2).jpg');"></div>
+    <div class="test-image" style="background-image: url('assets/images/products/product%20(3).jpg');"></div>
+
+    <h2>Method 2: Direct Path with Spaces</h2>
+    <img src="assets/images/products/product (1).jpg" width="300" style="border: 2px solid #D4AF37; margin: 20px;">
+    <img src="assets/images/products/product (2).jpg" width="300" style="border: 2px solid #D4AF37; margin: 20px;">
+    <img src="assets/images/products/product (3).jpg" width="300" style="border: 2px solid #D4AF37; margin: 20px;">
+
+    <div class="info">
+        <h2>Checking File Paths:</h2>
+        <p>Expected location: <code>C:\Users\VISHAL\Pictures\ZISHANN\assets\images\products\</code></p>
+        <p>Files should be named: product (1).jpg, product (2).jpg, etc.</p>
+    </div>
+
+    <script>
+        // Test if images load
+        const img = new Image();
+        img.onload = function () {
+            console.log('✅ Image loaded successfully!');
+            document.body.innerHTML += '<div class="info" style="background: green;"><h2>✅ SUCCESS: Images are loading correctly!</h2></div>';
+        };
+        img.onerror = function () {
+            console.error('❌ Image failed to load');
+            document.body.innerHTML += '<div class="info" style="background: red;"><h2>❌ ERROR: Images not found!</h2><p>Check if files exist in: assets/images/products/</p></div>';
+        };
+        img.src = 'assets/images/products/product%20(1).jpg';
+    </script>
+</body>
+
+</html>
